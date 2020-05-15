@@ -48,8 +48,9 @@ Base Layouts Styles
 /* Layout Containers */
 
 .container {
-    /* width: 90%; */
-    margin: 6% 3%;
+    max-width: 1440px;
+    margin: 20px 15px;
+    border-radius: 10px;
 }
 .main-header,
 .primary,
@@ -67,7 +68,7 @@ Base Layouts Styles
     background: hsl(179, 62%, 43%);
 }
 .secondary {
-    background: hsl(178, 33%, 55%);
+    background: #4abebd;
 }
 
 /* ==============================================
@@ -82,10 +83,11 @@ Page Elements Layouts
 .button {
     color: #ffffff;
     background: hsl(71, 73%, 54%);
-    padding: 10px 80px;
-    margin-bottom: 15px;
+    padding: 10px 0px;
     border-radius: 5px;
     display: inline-block;
+    width: 240px;
+    text-align: center;
 }
 .hang {
     display: flex;
@@ -96,3 +98,29 @@ Page Elements Layouts
 /* ==============================================
 Media Queries
 ===============================================*/
+/* @media (min-width:678px) {
+
+    .container {
+        display: flex;
+    }    
+    .container {
+        flex-wrap: wrap;
+        width: 50%;
+        margin: auto;
+    }
+    .main-header {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .primary,
+    .secondary {
+        width: 50%;  
+    }
+    .primary {
+        border-bottom-left-radius:5px ;
+    }
+    .secondary {
+        border-bottom-right-radius: 5px;
+    }
+
+} */
