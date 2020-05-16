@@ -112,7 +112,8 @@ Media Queries
 
     .container {
         display: flex;
-        width: 50%;
+        max-height: 470px;
+        max-width: 635px;
         flex-wrap: wrap;
     }    
     .col {
