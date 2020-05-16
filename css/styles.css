@@ -1,14 +1,21 @@
 /* ==============================================
 Base Elements Styles
 ===============================================*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Karla', sans-serif;
     line-height: 1.6;
     margin: 0;
     background:hsl(204, 43%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
 }
 .main-header p {
     margin-bottom: 0;
@@ -29,6 +36,7 @@ ul {
     margin: 0;
     list-style: none;
 }
+
 ul li {
     line-height: 1.5;
     color: #dddddd;
@@ -51,6 +59,8 @@ Base Layouts Styles
     max-width: 1440px;
     margin: 20px 15px;
     border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 1;
 }
 .main-header,
 .primary,
@@ -98,29 +108,14 @@ Page Elements Layouts
 /* ==============================================
 Media Queries
 ===============================================*/
-/* @media (min-width:678px) {
+@media (min-width:678px) {
 
     .container {
         display: flex;
-    }    
-    .container {
-        flex-wrap: wrap;
         width: 50%;
-        margin: auto;
+        flex-wrap: wrap;
+    }    
+    .col {
+        flex: 1;
     }
-    .main-header {
-        width: 100%;
-        border-radius: 5px 5px 0 0;
-    }
-    .primary,
-    .secondary {
-        width: 50%;  
-    }
-    .primary {
-        border-bottom-left-radius:5px ;
-    }
-    .secondary {
-        border-bottom-right-radius: 5px;
-    }
-
-} */
+}
